@@ -9,9 +9,11 @@ class TrainController extends Controller
 {
     public function index(){
         $trains = Train::all();
-;
-        dd($trains);
 
-        return view('trainsPage');
+        $data = [
+            'train' => $trains,
+        ];
+
+        return view('trainsPage', $data);
     }
 }
