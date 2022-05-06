@@ -8,7 +8,8 @@ use App\Train;
 class TrainController extends Controller
 {
     public function index(){
-        $trains = Train::all();
+        // $trains = Train::all();
+        $trains = Train::paginate(25);
 
         $data = [
             'train' => $trains,

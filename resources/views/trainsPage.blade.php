@@ -19,6 +19,6 @@
                 </span>
             </div>
         @endforeach
-
+        {{ $train->links() }}
 </body>
 </html>

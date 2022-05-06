@@ -20,9 +20,9 @@ class TrainSeeder extends Seeder
                 'Stazione_di_arrivo' => $faker->city(),
                 'Orario_di_partenza' => $faker->date(),
                 'Orario_di_arrivo' => $faker->date(),
-                'Codice_Treno' => $faker->randomDigitNot(4),
-                'Numero_Carrozze' => $faker->randomDigitNot(10),
-                'In_orario' => $faker->word(),
+                'Codice_Treno' => $faker->numerify('####'),
+                'Numero_Carrozze' => $faker->randomNumber(1, false),
+                'In_orario' => $faker->boolean(),
                 'Cancellato' => $faker->boolean(),
             ];
             $train = new Train();
