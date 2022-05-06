@@ -26,7 +26,7 @@ class CreateTrainsTable extends Migration
             $table->string('In_orario', 50);
             $table->string('Cancellato', 50);
 
-            // da aggiustare orario di partenza, arrivo e cancellato
+            // TOFIX orario di partenza, arrivo e cancellato
         });
     }
 
